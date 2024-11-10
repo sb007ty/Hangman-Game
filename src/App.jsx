@@ -22,6 +22,7 @@ function App() {
   const [score, setScore] = useState(0);
   const finalScoreRef = useRef(0);
   const [finScore, setFinScore] = useState(0);
+  const [currWord, setCurrWord] = useState("");
   function restartGame() {
     setPlay(false);
     setGameOver(true);
@@ -46,6 +47,7 @@ function App() {
               finalScoreRef={finalScoreRef}
               finScore={finScore}
               score={score}
+              currWord={currWord}
             />
           )}
           {play && (
@@ -56,6 +58,8 @@ function App() {
               score={score}
               setScore={setScore}
               finalScoreRef={finalScoreRef}
+              currWord={currWord}
+              setCurrWord={setCurrWord}
             />
           )}
         </Card>

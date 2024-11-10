@@ -1,11 +1,12 @@
 import hangmanPic from "../assets/noose.svg";
 import "../styles/intro.css";
-function Intro({ startGame, gameOver, score, finScore }) {
+function Intro({ startGame, gameOver, score, finScore, currWord }) {
   return (
     <>
       <h2>Hangman</h2>
 
       {gameOver && <p>Final Score - {finScore}</p>}
+      {gameOver && <p>Word was - {currWord}</p>}
       <img
         src={hangmanPic}
         className="noose-pic"

@@ -15,9 +15,11 @@ function KeyBoard({
   setScore,
   score,
   finalScoreRef,
+  currWord,
+  setCurrWord,
 }) {
   const [wordsSoFar, setWordsSoFar] = useState([]);
-  const [currWord, setCurrWord] = useState("");
+
   const [selLetters, setSelLetters] = useState([]);
   const [disabled, setDisabled] = useState(false);
   const [time, setTime] = useState(timerMins * 60);

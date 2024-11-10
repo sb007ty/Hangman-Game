@@ -2,7 +2,14 @@ import { useEffect, useState } from "react";
 import "../styles/play.css";
 import KeyBoard from "./KeyBoard";
 import Life from "./Life";
-function Play({ restartGame, score, setScore, finalScoreRef }) {
+function Play({
+  restartGame,
+  score,
+  setScore,
+  finalScoreRef,
+  currWord,
+  setCurrWord,
+}) {
   const [life, setLife] = useState(8);
   return (
     <div className="play-div">
@@ -19,6 +26,8 @@ function Play({ restartGame, score, setScore, finalScoreRef }) {
         setScore={setScore}
         score={score}
         finalScoreRef={finalScoreRef}
+        currWord={currWord}
+        setCurrWord={setCurrWord}
       />
     </div>
   );
