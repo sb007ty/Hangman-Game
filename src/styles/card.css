@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* justify-content: space-evenly; */
+  padding: 20px;
+  color: black;
+
+  border-radius: 25px;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  min-height: 80vh;
+}
+.light-theme {
+  background-color: white;
+  border: 2px solid black;
+}
+.dark-theme {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: white;
+  border: 2px solid white;
+}
+@media screen and (max-width: 1024px) {
+  .container .card {
+    width: 95%;
+    padding: 0px;
+    gap: 10px;
+  }
+}

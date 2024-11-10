@@ -1,0 +1,15 @@
+.play-btn {
+  height: var(--btn-height);
+  width: var(--btn-width);
+  background-color: var(--btn-background-color);
+  border-radius: 25px;
+  color: white;
+  font-size: var(--btn-font-size);
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.noose-pic {
+  height: auto;
+  max-width: 100%;
+}
