@@ -20,7 +20,7 @@ function App() {
   const [theme, setTheme] = useState(getTheme());
   const [gameOver, setGameOver] = useState(false);
   const [score, setScore] = useState(0);
-  const finalScoreRef = useRef(null);
+  const finalScoreRef = useRef(0);
   const [finScore, setFinScore] = useState(0);
   function restartGame() {
     setPlay(false);
